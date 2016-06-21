@@ -1,0 +1,12 @@
+#/bin/bash
+while true
+do
+if [ "$(who)" = "$(who | grep jtd8770)" ]
+then
+	echo "I am the only one logged in to this computer."
+else
+	echo "Someone is logged in to your computer!"
+	say "Warning!"
+fi
+sleep 3
+done
